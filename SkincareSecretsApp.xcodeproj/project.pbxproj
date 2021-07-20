@@ -16,6 +16,10 @@
 		A50DDB2226A766E1008774F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50DDB2026A766E1008774F3 /* LaunchScreen.storyboard */; };
 		A50DDB2D26A766E2008774F3 /* SkincareSecretsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DDB2C26A766E2008774F3 /* SkincareSecretsAppTests.swift */; };
 		A50DDB3826A766E2008774F3 /* SkincareSecretsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DDB3726A766E2008774F3 /* SkincareSecretsAppUITests.swift */; };
+		A51E208F26A76C970097D5BC /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E208E26A76C970097D5BC /* NewPostViewController.swift */; };
+		A51E209126A76D940097D5BC /* ReviewProductScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */; };
+		A51E209326A76DD30097D5BC /* AskAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */; };
+		A5FF67A226A7747800E74E79 /* StoredQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		A50DDB3326A766E2008774F3 /* SkincareSecretsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkincareSecretsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50DDB3726A766E2008774F3 /* SkincareSecretsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkincareSecretsAppUITests.swift; sourceTree = "<group>"; };
 		A50DDB3926A766E2008774F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51E208E26A76C970097D5BC /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewProductScreenViewController.swift; sourceTree = "<group>"; };
+		A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAQuestionViewController.swift; sourceTree = "<group>"; };
+		A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredQuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 		A50DDB0626A766E0008774F3 = {
 			isa = PBXGroup;
 			children = (
+				A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */,
+				A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */,
+				A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */,
+				A51E208E26A76C970097D5BC /* NewPostViewController.swift */,
 				A50DDB1126A766E0008774F3 /* SkincareSecretsApp */,
 				A50DDB2B26A766E2008774F3 /* SkincareSecretsAppTests */,
 				A50DDB3626A766E2008774F3 /* SkincareSecretsAppUITests */,
@@ -261,10 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E209126A76D940097D5BC /* ReviewProductScreenViewController.swift in Sources */,
+				A5FF67A226A7747800E74E79 /* StoredQuestionsViewController.swift in Sources */,
 				A50DDB1726A766E0008774F3 /* ViewController.swift in Sources */,
 				A50DDB1D26A766E0008774F3 /* SkincareSecretsApp.xcdatamodeld in Sources */,
 				A50DDB1326A766E0008774F3 /* AppDelegate.swift in Sources */,
 				A50DDB1526A766E0008774F3 /* SceneDelegate.swift in Sources */,
+				A51E209326A76DD30097D5BC /* AskAQuestionViewController.swift in Sources */,
+				A51E208F26A76C970097D5BC /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
