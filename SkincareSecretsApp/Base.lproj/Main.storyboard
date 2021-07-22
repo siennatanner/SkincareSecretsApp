@@ -45,23 +45,33 @@
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ceravepic" translatesAutoresizingMaskIntoConstraints="NO" id="T2i-lq-xWy">
-                                <rect key="frame" x="-85" y="162" width="309" height="207"/>
+                                <rect key="frame" x="-32" y="207" width="182" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Und-bw-g1F">
-                                <rect key="frame" x="137" y="193" width="257" height="34"/>
+                                <rect key="frame" x="110" y="200" width="207" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="CeraVe Foaming Facial Cleanser"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Jg-zQr">
+                                <rect key="frame" x="110" y="396" width="289" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="DermaControl Oil Control Moisturizer SPF 30"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2254341" translatesAutoresizingMaskIntoConstraints="NO" id="8sm-jM-fi7">
+                                <rect key="frame" x="-8" y="397" width="116" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyF-P9-8cr">
-                                <rect key="frame" x="137" y="239" width="266" height="125"/>
+                                <rect key="frame" x="110" y="227" width="266" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Removes excess oil without overstripping your skin
 Contains ceramides to improve skin health
 Developed by dermatologists
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -709,7 +719,7 @@ Developed by dermatologists
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AsW-rm-qyd">
-                                <rect key="frame" x="0.0" y="759" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="791" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" image="house" catalog="system" id="nML-lL-98t">
@@ -747,11 +757,12 @@ Developed by dermatologists
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cYF-j7-Irs"/>
-        <segue reference="K1v-ag-vsq"/>
-        <segue reference="V8r-iZ-FXg"/>
+        <segue reference="vsX-Cc-bSb"/>
+        <segue reference="dh8-nh-6Ze"/>
+        <segue reference="fT2-8J-w7W"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="2254341" width="800" height="800"/>
         <image name="Jackie" width="820" height="1361"/>
         <image name="Vin-Diesel-3--1" width="768" height="516"/>
         <image name="bag" catalog="system" width="128" height="128"/>
