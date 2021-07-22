@@ -19,6 +19,11 @@
 		A51E208F26A76C970097D5BC /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E208E26A76C970097D5BC /* NewPostViewController.swift */; };
 		A51E209126A76D940097D5BC /* ReviewProductScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */; };
 		A51E209326A76DD30097D5BC /* AskAQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */; };
+		A5853EE926A8940600E976F7 /* DiscoverProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5853EE826A8940600E976F7 /* DiscoverProductsViewController.swift */; };
+		A5853EEB26A895F500E976F7 /* OilySkinProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5853EEA26A895F500E976F7 /* OilySkinProductsViewController.swift */; };
+		A5853EED26A896D700E976F7 /* AcneProneProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5853EEC26A896D700E976F7 /* AcneProneProductsViewController.swift */; };
+		A5853EEF26A89D3300E976F7 /* SavedProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5853EEE26A89D3300E976F7 /* SavedProductsViewController.swift */; };
+		A5853EF126A89FFD00E976F7 /* ProductsYouLoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5853EF026A89FFD00E976F7 /* ProductsYouLoveViewController.swift */; };
 		A5FF67A226A7747800E74E79 /* StoredQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		A51E208E26A76C970097D5BC /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewProductScreenViewController.swift; sourceTree = "<group>"; };
 		A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAQuestionViewController.swift; sourceTree = "<group>"; };
+		A5853EE826A8940600E976F7 /* DiscoverProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverProductsViewController.swift; sourceTree = "<group>"; };
+		A5853EEA26A895F500E976F7 /* OilySkinProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilySkinProductsViewController.swift; sourceTree = "<group>"; };
+		A5853EEC26A896D700E976F7 /* AcneProneProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcneProneProductsViewController.swift; sourceTree = "<group>"; };
+		A5853EEE26A89D3300E976F7 /* SavedProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProductsViewController.swift; sourceTree = "<group>"; };
+		A5853EF026A89FFD00E976F7 /* ProductsYouLoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsYouLoveViewController.swift; sourceTree = "<group>"; };
 		A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredQuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +99,9 @@
 		A50DDB0626A766E0008774F3 = {
 			isa = PBXGroup;
 			children = (
+				A5853EEC26A896D700E976F7 /* AcneProneProductsViewController.swift */,
+				A5853EEA26A895F500E976F7 /* OilySkinProductsViewController.swift */,
+				A5853EE826A8940600E976F7 /* DiscoverProductsViewController.swift */,
 				A5FF67A126A7747800E74E79 /* StoredQuestionsViewController.swift */,
 				A51E209226A76DD30097D5BC /* AskAQuestionViewController.swift */,
 				A51E209026A76D940097D5BC /* ReviewProductScreenViewController.swift */,
@@ -117,6 +130,8 @@
 				A50DDB1426A766E0008774F3 /* SceneDelegate.swift */,
 				A50DDB1626A766E0008774F3 /* ViewController.swift */,
 				A50DDB1826A766E0008774F3 /* Main.storyboard */,
+				A5853EF026A89FFD00E976F7 /* ProductsYouLoveViewController.swift */,
+				A5853EEE26A89D3300E976F7 /* SavedProductsViewController.swift */,
 				A50DDB1E26A766E1008774F3 /* Assets.xcassets */,
 				A50DDB2026A766E1008774F3 /* LaunchScreen.storyboard */,
 				A50DDB2326A766E1008774F3 /* Info.plist */,
@@ -274,13 +289,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51E209126A76D940097D5BC /* ReviewProductScreenViewController.swift in Sources */,
+				A5853EF126A89FFD00E976F7 /* ProductsYouLoveViewController.swift in Sources */,
 				A5FF67A226A7747800E74E79 /* StoredQuestionsViewController.swift in Sources */,
 				A50DDB1726A766E0008774F3 /* ViewController.swift in Sources */,
 				A50DDB1D26A766E0008774F3 /* SkincareSecretsApp.xcdatamodeld in Sources */,
 				A50DDB1326A766E0008774F3 /* AppDelegate.swift in Sources */,
+				A5853EE926A8940600E976F7 /* DiscoverProductsViewController.swift in Sources */,
 				A50DDB1526A766E0008774F3 /* SceneDelegate.swift in Sources */,
 				A51E209326A76DD30097D5BC /* AskAQuestionViewController.swift in Sources */,
+				A5853EEB26A895F500E976F7 /* OilySkinProductsViewController.swift in Sources */,
 				A51E208F26A76C970097D5BC /* NewPostViewController.swift in Sources */,
+				A5853EEF26A89D3300E976F7 /* SavedProductsViewController.swift in Sources */,
+				A5853EED26A896D700E976F7 /* AcneProneProductsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
