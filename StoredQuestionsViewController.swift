@@ -9,13 +9,26 @@ import UIKit
 
 class StoredQuestionsViewController: UIViewController {
 
+    @IBOutlet weak var firstProductReview: UILabel!
+    
+    var productName : String = ""
+    
+    var productReview : String = ""
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        firstProductReview.text = "\(productName): \(productReview)"
+        
         // Do any additional setup after loading the view.
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 

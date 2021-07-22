@@ -8,7 +8,7 @@
 import UIKit
 
 class ReviewProductScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var productReviewTextField: UITextField!
     
     @IBOutlet weak var yesOrNoRecommendSegmentedControl: UISegmentedControl!
@@ -21,11 +21,29 @@ class ReviewProductScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        let productName = productReviewTextField.text ?? ""
+        let productReview = whyRecommendTextField.text ?? ""
+        
+        let destinationVC = segue.destination as! StoredQuestionsViewController
+        destinationVC.productName = productName
+        destinationVC.productReview = productReview
+        
+    
+        
+    
+        
+        
+    }
     
     
     
@@ -37,13 +55,10 @@ class ReviewProductScreenViewController: UIViewController {
             productReviewLabel.text = firstProductReview
         
     }
-    
-    
-    
-    
-    
 
+        }
     
+   
     
     /*
     // MARK: - Navigation
@@ -55,5 +70,4 @@ class ReviewProductScreenViewController: UIViewController {
     }
     */
     }
-}
 
