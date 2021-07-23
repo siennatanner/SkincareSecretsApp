@@ -15,18 +15,8 @@ class ReviewProductScreenViewController: UIViewController {
     
     @IBOutlet weak var whyRecommendTextField: UITextField!
     
-    @IBOutlet weak var productNameLabel: UILabel!
     
-    @IBOutlet weak var productReviewLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
-    
+    @IBOutlet weak var yesOrNoLabel: UILabel!
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,7 +26,7 @@ class ReviewProductScreenViewController: UIViewController {
         
         let destinationVC = segue.destination as! StoredQuestionsViewController
         destinationVC.productName = productName
-       destinationVC.productReview = productReview
+        destinationVC.userReview = userReview
     
 
         
@@ -45,18 +35,33 @@ class ReviewProductScreenViewController: UIViewController {
     
     
     
-    @IBAction func postProductReviewButtonTapped(_ sender: UIButton) {
-        if let firstProductReviewName = productReviewTextField.text {
-            productNameLabel.text = firstProductReviewName
-        }
-        if let firstProductReview = whyRecommendTextField.text {
-            productReviewLabel.text = firstProductReview
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
-
-        }
     
-   
+
+ 
+      @IBAction func segmentedControlIndexChanged(_ sender: Any) {
+        switch yesOrNoRecommendSegmentedControl.selectedSegmentIndex
+          {
+          case 0:
+            yesOrNoLabel.text = "Yes"
+          case 1:
+            yesOrNoLabel.text = "No"
+          default:
+            break
+          }
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     /*
     // MARK: - Navigation

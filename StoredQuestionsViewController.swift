@@ -9,19 +9,30 @@ import UIKit
 
 class StoredQuestionsViewController: UIViewController {
 
-    @IBOutlet weak var firstProductReview: UILabel!
+    @IBOutlet weak var productNameReview1: UILabel!
+    @IBOutlet weak var yesOrNoRecommendationResponse1: UILabel!
+    @IBOutlet weak var productWrittenReview1: UILabel!
+    
     
     var productName : String = ""
-    
-    var productReview : String = ""
-    
+    var userReview : String = ""
+    var doesUserRecommend : Bool = true || false
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if doesUserRecommend == true {
+            yesOrNoRecommendationResponse1.text = "Does Alex recommend this product? Yes!"
+        } else {
+            yesOrNoRecommendationResponse1.text = "Does Alex recommend this product? No."
+        }
+        
 
-        firstProductReview.text = "\(productName) : \(productReview)"
+        productNameReview1.text = "Product: \(productName)"
+        productWrittenReview1.text = "\(userReview)"
+        
         
         // Do any additional setup after loading the view.
     }
