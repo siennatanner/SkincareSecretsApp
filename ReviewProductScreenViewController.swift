@@ -22,7 +22,7 @@ class ReviewProductScreenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
         let productName = productReviewTextField.text ?? ""
-        let productReview = whyRecommendTextField.text ?? ""
+        let userReview = whyRecommendTextField.text ?? ""
         
         let destinationVC = segue.destination as! StoredQuestionsViewController
         destinationVC.productName = productName
