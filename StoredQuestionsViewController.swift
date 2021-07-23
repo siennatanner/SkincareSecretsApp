@@ -35,14 +35,14 @@ class StoredQuestionsViewController: UIViewController {
         super.viewDidLoad()
 
         
-        if doesUserRecommend == true {
+        if doesUserRecommend == false {
             yesOrNoRecommendationResponse1.text = "Does Alex recommend this product? Yes!"
         } else {
             yesOrNoRecommendationResponse1.text = "Does Alex recommend this product? No."
         }
         
         //for product review
-        productNameReview1.text = "Product: \(productName)"
+        productNameReview1.text = "\(productName)"
         productWrittenReview1.text = "\(userReview)"
         
         //for question

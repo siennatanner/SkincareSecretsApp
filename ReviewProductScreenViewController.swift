@@ -23,11 +23,14 @@ class ReviewProductScreenViewController: UIViewController {
        
         let productName = productReviewTextField.text ?? ""
         let userReview = whyRecommendTextField.text ?? ""
+        let doesUserRecommend = yesOrNoRecommendSegmentedControl.selectedSegmentIndex
+        
         
         let destinationVC = segue.destination as! StoredQuestionsViewController
         destinationVC.productName = productName
         destinationVC.userReview = userReview
-    
+        destinationVC.doesUserRecommend = (doesUserRecommend != 0)
+        
 
         
         
@@ -42,23 +45,27 @@ class ReviewProductScreenViewController: UIViewController {
     
 
  
-      @IBAction func segmentedControlIndexChanged(_ sender: Any) {
-        switch yesOrNoRecommendSegmentedControl.selectedSegmentIndex
-          {
-          case 0:
-            yesOrNoLabel.text = "✔"
-          case 1:
-            yesOrNoLabel.text = "✘"
-          default:
-            break
-          }
+      @IBAction func segmentedControlIndexChanged(_ sender: UISegmentedControl) {
+      if sender.selectedSegmentIndex == 0 {
+        yesOrNoLabel.text = "✔"
+        }
+      else if sender.selectedSegmentIndex == 1 {
+        yesOrNoLabel.text = "✘"
       }
+    }
     
     
-    
-    
-    
-    
+//    func segmentedControlIndexChanged(_ sender: Any) {
+//      switch yesOrNoRecommendSegmentedControl.selectedSegmentIndex
+//        {
+//        case 0:
+//          yesOrNoLabel.text = "✔"
+//        case 1:
+//          yesOrNoLabel.text = "✘"
+//        default:
+//          break
+//        }
+//    }
     
     
     
