@@ -21,7 +21,7 @@ class StoredQuestionsViewController: UIViewController {
         super.viewDidLoad()
 
 
-        firstProductReview.text = "\(productName): \(productReview)"
+        firstProductReview.text = "\(productName) : \(productReview)"
         
         // Do any additional setup after loading the view.
     }

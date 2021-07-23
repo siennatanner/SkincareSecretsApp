@@ -36,11 +36,9 @@ class ReviewProductScreenViewController: UIViewController {
         
         let destinationVC = segue.destination as! StoredQuestionsViewController
         destinationVC.productName = productName
-        destinationVC.productReview = productReview
-        
+       destinationVC.productReview = productReview
     
-        
-    
+
         
         
     }
