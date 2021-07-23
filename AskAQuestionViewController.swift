@@ -9,6 +9,35 @@ import UIKit
 
 class AskAQuestionViewController: UIViewController {
 
+    
+    @IBOutlet weak var enterYourQuestionTextField: UITextField!
+    @IBOutlet weak var skinTypeOrConcernsTextField: UITextField!
+    @IBOutlet weak var productTypeTextField: UITextField!
+    
+    
+    
+    
+ 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        let userQuestion = enterYourQuestionTextField.text ?? ""
+        let skinTypeOrConcern = skinTypeOrConcernsTextField.text ?? ""
+        let desiredProduct = productTypeTextField.text ?? ""
+        
+        
+        let destinationVC = segue.destination as! StoredQuestionsViewController
+        destinationVC.userQuestion = userQuestion
+        destinationVC.skinTypeOrConcern = skinTypeOrConcern
+        destinationVC.desiredProduct = desiredProduct
+    }
+   
+
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

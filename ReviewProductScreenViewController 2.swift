@@ -22,7 +22,7 @@ class ReviewProductScreenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
         let productName = productReviewTextField.text ?? ""
-        let userReview = whyRecommendTextField.text ?? ""
+        let productReview = whyRecommendTextField.text ?? ""
         
         let destinationVC = segue.destination as! StoredQuestionsViewController
         destinationVC.productName = productName
@@ -46,9 +46,9 @@ class ReviewProductScreenViewController: UIViewController {
         switch yesOrNoRecommendSegmentedControl.selectedSegmentIndex
           {
           case 0:
-            yesOrNoLabel.text = "✔"
+            yesOrNoLabel.text = "Yes"
           case 1:
-            yesOrNoLabel.text = "✘"
+            yesOrNoLabel.text = "No"
           default:
             break
           }
